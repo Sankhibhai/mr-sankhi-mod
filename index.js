@@ -1,3 +1,8 @@
+// 🛠️ HTTP server to avoid Render port binding error
+const http = require("http");
+http.createServer((req, res) => res.end("MR-SANKHI-MOD is alive")).listen(3000);
+
+// 🌐 Main Bot Code
 require("dotenv").config();
 const {
   Client,
